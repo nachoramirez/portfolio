@@ -2,7 +2,7 @@ import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
 import Main from '../Main/Main.jsx'
 
-
+import AboutMe from '../AboutMe/AboutMe.jsx'
 
 const Fullpage = () => (
   <ReactFullpage
@@ -16,7 +16,7 @@ const Fullpage = () => (
             <Main goDown={fullpageApi} />
           </div>
           <div className="section">
-          <Main />
+            <AboutMe />
           </div>
           <div className="section">
             <Main />
