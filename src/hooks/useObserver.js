@@ -13,6 +13,7 @@ export const useObserver = (Ref) => {
     const Observer = new IntersectionObserver((entries) => {
       const [entry] = entries
       setIsVisible(entry.isIntersecting)
+      console.log(entry)
     }, options)
 
     isVisible && setHasBeenVisible(true)

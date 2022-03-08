@@ -12,18 +12,20 @@ const NavBar = () => {
     <NavBarContainer>
       <Name> Juan Ignacio Ramirez</Name>
       <NavBarButtons>
-        <a href="#home">
+        <a href="/#home">
           <NavBarItem src={HomeIcon} />
         </a>
-        <a href="#about-me">
+        <a href="/#about-me">
           <NavBarItem src={PersonIcon} />
         </a>
-        <a href="#contact">
+        <a href="/#proyects">
           <NavBarItem src={WorkIcon} />
         </a>
-        <NavBarItem src={ContactIcon} />
+        <a href="/#contact">
+          <NavBarItem src={ContactIcon} />
+        </a>
       </NavBarButtons>
-      <h1></h1>
+      <h1 />
     </NavBarContainer>
   )
 }

@@ -32,12 +32,12 @@ const AboutMe = () => {
           </Description>
           <Description>
             I work principaly with React. But i also know native HTML, CSS and
-            Javascript
+            Javascript.
           </Description>
           <Description>
             At the moment, I'm searching for my first frotend developer job. So
             if you are interested
-            <ContactMe href={'#contact'}> Contact me</ContactMe>
+            <ContactMe href={'#contact'}> Contact me.</ContactMe>
           </Description>
           {/* <Description> The technologies that I work are </Description> */}
         </DescriptionContainer>

@@ -51,7 +51,7 @@ const Main = ({ goDown }) => {
         </MainInfoContainer>
         <ImagesContainer>
           <LeftDecoration src={lightBlueDots} />
-          <MainImage src={Photo} />
+          <MainImage alt='Nacho Ramirez' src={Photo} />
           <RigthDecoration src={blueDots} />
         </ImagesContainer>
       </InfoAndFotoContainer>

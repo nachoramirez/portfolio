@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   section {
-    width: 90%;
+    width: 92%;
     height: 100vh;
     display: flex;
     float: right;

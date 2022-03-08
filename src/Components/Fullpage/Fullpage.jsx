@@ -1,14 +1,15 @@
 import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
-import Main from '../Main/Main.jsx'
 
+import Main from '../Main/Main.jsx'
 import AboutMe from '../AboutMe/AboutMe.jsx'
+import Proyects from '../Proyects/Proyects.jsx'
 
 const Fullpage = () => (
   <ReactFullpage
-    scrollingSpeed={1000} /* Options here */
-    anchors={['home', 'about-me', 'contact']}
-    navigationTooltips={['', 'about-me', 'contact']}
+    scrollingSpeed={700} 
+    anchors={['home', 'about-me', 'proyects', 'contact']}
+    navigationTooltips={['', 'about-me', 'proyects', 'contact']}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
@@ -19,10 +20,10 @@ const Fullpage = () => (
             <AboutMe />
           </div>
           <div className="section">
-            <Main />
+            <Proyects />
           </div>
           <div className="section">
-            <Main />
+            <h1> HOLA</h1>
           </div>
         </ReactFullpage.Wrapper>
       )
