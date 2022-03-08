@@ -64,4 +64,5 @@ export const Technology = styled.img`
   height: 90px;
   width: 90px;
   margin: 0 20px;
+  cursor: pointer;
 `

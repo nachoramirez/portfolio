@@ -31,14 +31,17 @@ const ProyectsData = [
       {
         logo: ReactLogo,
         alt: 'react logo',
+        url: 'https://reactjs.org/',
       },
       {
         logo: ReactRouter,
         alt: 'react router dom',
+        url: 'https://reactrouter.com/',
       },
       {
         logo: StyledComponents,
         alt: 'styled components',
+        url: 'https://styled-components.com/',
       },
     ],
   },
@@ -52,18 +55,22 @@ const ProyectsData = [
       {
         logo: ReactLogo,
         alt: 'react logo',
+        url: 'https://reactjs.org/',
       },
       {
         logo: ReactRouter,
         alt: 'react router dom',
+        url: 'https://reactrouter.com/',
       },
       {
         logo: StyledComponents,
         alt: 'styled components',
+        url: 'https://styled-components.com/',
       },
       {
         logo: ReduxLogo,
         alt: 'redux',
+        url: 'https://redux.js.org/',
       },
     ],
   },
@@ -77,14 +84,17 @@ const ProyectsData = [
       {
         logo: ReactLogo,
         alt: 'react logo',
+        url: 'https://reactjs.org/',
       },
       {
         logo: ReactRouter,
         alt: 'react router dom',
+        url: 'https://reactrouter.com/',
       },
       {
         logo: StyledComponents,
         alt: 'styled components',
+        url: 'https://styled-components.com/',
       },
     ],
   },
@@ -105,7 +115,9 @@ const ProyectView = () => {
           <ProyectDescription>{data[0].desctription}</ProyectDescription>
           <TechnologiesContainer>
             {data[0].technologies.map((item) => (
-              <Technology key={item.id} alt={item.alt} src={item.logo} />
+              <a target="_blank" key={item.id} href={item.url}>
+                <Technology alt={item.alt} src={item.logo} />
+              </a>
             ))}
           </TechnologiesContainer>
         </TextProyect>
