@@ -34,6 +34,10 @@ const GlobalStyle = createGlobalStyle`
     border: none;
     cursor: pointer;
     color: white;
+    &:hover{
+     filter: brightness(1.5);
+    }
+
   }
 
   body {

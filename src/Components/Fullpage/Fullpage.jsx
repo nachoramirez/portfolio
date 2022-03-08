@@ -4,10 +4,11 @@ import ReactFullpage from '@fullpage/react-fullpage'
 import Main from '../Main/Main.jsx'
 import AboutMe from '../AboutMe/AboutMe.jsx'
 import Proyects from '../Proyects/Proyects.jsx'
+import Contact from '../Contact/Contact.jsx'
 
 const Fullpage = () => (
   <ReactFullpage
-    scrollingSpeed={700} 
+    scrollingSpeed={700}
     anchors={['home', 'about-me', 'proyects', 'contact']}
     navigationTooltips={['', 'about-me', 'proyects', 'contact']}
     render={({ state, fullpageApi }) => {
@@ -23,7 +24,7 @@ const Fullpage = () => (
             <Proyects />
           </div>
           <div className="section">
-            <h1> HOLA</h1>
+            <Contact />
           </div>
         </ReactFullpage.Wrapper>
       )
