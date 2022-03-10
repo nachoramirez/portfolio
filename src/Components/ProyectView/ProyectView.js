@@ -15,12 +15,31 @@ export const ProyectViewContainer = styled.section`
   animation: ${showAnimation} linear 1.5s;
 `
 
-export const Image = styled.img`
-  object-fit: cover;
+export const Image = styled.div`
   width: 700px;
   height: 400px;
+  position: relative;
+  background: url(${(props) => props.image || ' '}) center;
+  background-size: cover;
   justify-self: left;
+  & > * {
+    visibility: hidden;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+  }
+  &:hover {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      ),
+      url(${(props) => props.image || ' '});
+    & > * {
+      visibility: visible;
+    }
+  }
 `
+
 
 export const ProyectInfo = styled.div`
   display: flex;
@@ -61,8 +80,8 @@ export const TechnologiesContainer = styled.div`
 `
 
 export const Technology = styled.img`
-  height: 90px;
-  width: 90px;
-  margin: 0 20px;
+  height: 70px;
+  width: 70px;
+  margin: 20px;
   cursor: pointer;
 `

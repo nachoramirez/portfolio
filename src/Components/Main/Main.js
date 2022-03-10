@@ -122,6 +122,7 @@ export const RigthDecoration = styled.img`
   position: absolute;
   bottom: -10%;
   right: -15%;
+  user-select: none;
 `
 
 export const LeftDecoration = styled.img`
@@ -129,6 +130,7 @@ export const LeftDecoration = styled.img`
   position: absolute;
   top: -10%;
   left: -15%;
+  user-select: none;
 `
 
 export const GoDownButton = styled.button`

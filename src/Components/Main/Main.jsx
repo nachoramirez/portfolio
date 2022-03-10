@@ -24,19 +24,25 @@ import twitterLogo from '../../static/Twitter.svg'
 import linkdinLogo from '../../static/Linkdin.svg'
 import Photo from '../../static/Photo.jpg'
 
-
-
 const Main = ({ goDown }) => {
   return (
     <MainContainer>
       <MediaContainer>
-        <MediaItem height="40px" src={linkdinLogo} />
+        <a href="https://www.linkedin.com/in/juan-ignacio-ramirez-8632831b3/" target="_blank">
+          <MediaItem height="40px" src={linkdinLogo} />
+        </a>
         <h1>•</h1>
-        <MediaItem height="40px" src={instagramLogo} />
+        <a href="https://www.instagram.com/nacho_ramirez07/" target="_blank">
+          <MediaItem height="40px" src={instagramLogo} />
+        </a>
         <h1>•</h1>
-        <MediaItem src={twitterLogo} />
+        <a href="https://twitter.com/nacho_ramirez07" target="_blank">
+          <MediaItem src={twitterLogo} />
+        </a>
         <h1>•</h1>
-        <MediaItem src={githubLogo} />
+        <a href="https://github.com/nachoramirez" target="_blank">
+          <MediaItem src={githubLogo} />
+        </a>
       </MediaContainer>
       <InfoAndFotoContainer>
         <MainInfoContainer>
@@ -51,7 +57,7 @@ const Main = ({ goDown }) => {
         </MainInfoContainer>
         <ImagesContainer>
           <LeftDecoration src={lightBlueDots} />
-          <MainImage alt='Nacho Ramirez' src={Photo} />
+          <MainImage alt="Nacho Ramirez" src={Photo} />
           <RigthDecoration src={blueDots} />
         </ImagesContainer>
       </InfoAndFotoContainer>
