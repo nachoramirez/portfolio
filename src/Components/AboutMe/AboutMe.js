@@ -11,8 +11,8 @@ export const AboutMeContainer = styled.section`
 
 export const AboutMeData = styled.div`
   display: flex;
-  justify-content: left;
-  width: 65%;
+  justify-content: space-between;
+  width: 70%;
 `
 
 export const Title = styled.h1`
