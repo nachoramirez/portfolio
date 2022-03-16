@@ -17,6 +17,20 @@ export const NavBarContainer = styled.div`
   flex-direction: column;
   padding: 20px;
   z-index: 10;
+
+  @media (max-width: 768px) {
+    position: absolute;
+    transition: 300ms ease-in-out;
+    width: 80%;
+    transform: ${(props) =>
+      props.isOpen ? 'translateX(0)' : 'translateX(-400px)'};
+    visibility: ${(props) => (props.isOpen ? 'visible' : 'hidden')};
+    background: linear-gradient(
+      180deg,
+      rgba(7, 34, 39, 1) 40%,
+      rgba(79, 189, 186, 1) 140%
+    );
+  }
 `
 
 export const Name = styled.h1`
@@ -24,6 +38,11 @@ export const Name = styled.h1`
   font-size: 2.1em;
   font-weight: 400;
   line-height: 70px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    text-align: center;
+  }
 `
 
 export const NavBarButtons = styled.div`
@@ -32,6 +51,28 @@ export const NavBarButtons = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+`
+
+export const NavBarName = styled.p`
+  color: var(--white);
+  font-size: 1.7em;
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`
+
+export const NavBarLink = styled.a`
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
 `
 
 export const NavBarItem = styled.img`
@@ -43,5 +84,28 @@ export const NavBarItem = styled.img`
   &:hover {
     filter: brightness(1) drop-shadow(0px 0px 50px #fff);
   }
+
+  @media (max-width: 768px) {
+    &::before {
+    }
+  }
 `
 
+export const NavBarVisibilityButton = styled.img`
+  display: none;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 11;
+  @media (max-width: 768px) {
+    display: block;
+  }
+`
+
+/* 
+
+  @media (max-width: 768px) {
+
+  }
+*/
