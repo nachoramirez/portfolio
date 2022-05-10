@@ -26,7 +26,7 @@ export const Title = styled.h1`
 export const Form = styled.form`
   position: relative;
   width: 55%;
-  height: 50%;
+  height: 65%;
 `
 
 export const Input = styled.input`
@@ -74,6 +74,7 @@ export const SubmitButton = styled.button`
   border-radius: 0;
   position: absolute;
   right: 0;
+  bottom: 0;
 `
 
 export const Alert = styled.div`

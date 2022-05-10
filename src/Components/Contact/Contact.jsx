@@ -50,7 +50,7 @@ const Contact = () => {
         />
         <TextArea
           onChange={handleForm}
-          height="80%"
+          height="60%"
           type="text"
           name="message"
           placeholder="Your message..."

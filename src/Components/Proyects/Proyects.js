@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 
 export const ProyectsPageContainer = styled.section`
-  padding: 0;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   transition: 1s;
   opacity: ${(props) => (props.isVisible ? '1' : '0')};
   transform: ${(props) =>
     props.isVisible ? 'translateX(0)' : 'translateX(-500px)'};
+  @media (max-width: 768px) {
+    opacity: 1;
+    transform: translateX(0);
+  }
 `
 
 export const Title = styled.h1`
@@ -28,8 +32,14 @@ export const ProyectsContainer = styled.div`
   width: 100%;
   padding: 30px;
   display: flex;
-  justify-content: space-around;
   margin-top: 100px;
+  justify-content: space-around;
+  @media (max-width: 768px) {
+    height: 60%;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const Proyect = styled.div`
@@ -58,5 +68,10 @@ export const Proyect = styled.div`
       left: 20px;
       top: auto;
     }
+  }
+
+  @media (max-width: 768px) {
+    width: 250px;
+    height: 150px;
   }
 `

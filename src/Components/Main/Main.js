@@ -2,15 +2,9 @@ import styled, { keyframes } from 'styled-components'
 
 export const MainContainer = styled.section`
   width: 100%;
+  height: 85vh;
   justify-content: center;
   align-items: center;
-`
-
-export const InfoAndFotoContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 60%;
 `
 
 export const MediaContainer = styled.div`
@@ -21,6 +15,10 @@ export const MediaContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const MediaItem = styled.img`
@@ -29,9 +27,22 @@ export const MediaItem = styled.img`
   cursor: pointer;
 `
 
+export const InfoAndFotoContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
 export const MainInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+   align-items: center;
+  }
 `
 
 const typing = keyframes`
@@ -59,7 +70,10 @@ export const JobTitle = styled.h1`
   overflow-x: hidden;
   white-space: nowrap;
   border-right: 5px solid;
-  animation: ${typing} 1s steps(16, end), ${typingBar} 0.6s  infinite;
+  animation: ${typing} 1s steps(16, end), ${typingBar} 0.6s infinite;
+  @media (max-width: 768px) {
+    font-size: 3em;
+  }
 `
 
 const RotateAnimation = keyframes`
@@ -81,6 +95,9 @@ export const Hand = styled.span`
   margin: 0;
   animation: ${RotateAnimation} 1s 0s ease-in-out infinite;
   box-sizing: content-box;
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+  }
 `
 
 export const SecondTitle = styled.h1`
@@ -88,12 +105,19 @@ export const SecondTitle = styled.h1`
   font-size: 2em;
   font-weight: 300;
   margin: 0;
+  @media (max-width: 768px) {
+    font-size: 1.5em;
+  }
 `
 
 export const Languages = styled.h1`
   color: var(--principal-blue);
   font-weight: 400;
   font-size: 1.5em;
+  @media (max-width: 768px) {
+    font-size: 1.4em;
+    color: var(--light-blue);
+  }
 `
 
 export const ImagesContainer = styled.div`
@@ -101,6 +125,9 @@ export const ImagesContainer = styled.div`
   position: relative;
   top: 0;
   left: 0;
+  @media (max-width: 768px) {
+    margin: 10px;
+  }
 `
 export const MainImage = styled.img`
   height: 400px;
@@ -115,6 +142,11 @@ export const MainImage = styled.img`
   & src {
     transform: scale(1.5);
   }
+
+  @media (max-width: 768px) {
+    height: 300px;
+    border-radius: var(--border-radius-subtles);
+  }
 `
 
 export const RigthDecoration = styled.img`
@@ -123,6 +155,9 @@ export const RigthDecoration = styled.img`
   bottom: -10%;
   right: -15%;
   user-select: none;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const LeftDecoration = styled.img`
@@ -131,6 +166,9 @@ export const LeftDecoration = styled.img`
   top: -10%;
   left: -15%;
   user-select: none;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const GoDownButton = styled.button`
