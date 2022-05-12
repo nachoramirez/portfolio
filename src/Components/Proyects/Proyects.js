@@ -35,11 +35,16 @@ export const ProyectsContainer = styled.div`
   display: flex;
   margin-top: 100px;
   justify-content: space-around;
+
   @media (max-width: 768px) {
     height: 60%;
     margin-top: 0;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (max-width: 1500px) and (min-width: 768px) {
+    flex-wrap: wrap;
   }
 `;
 
@@ -71,8 +76,14 @@ export const Proyect = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     width: 250px;
     height: 150px;
+    margin: 10px;
+  }
+
+  @media (max-width: 1700px) and (min-width: 900px){
+    width: 370px;
+    height: 230px;
   }
 `;

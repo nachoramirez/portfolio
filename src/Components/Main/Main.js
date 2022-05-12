@@ -5,7 +5,7 @@ export const MainContainer = styled.section`
   height: 85vh;
   justify-content: center;
   align-items: center;
-  @media (max-width: 900px) {
+  @media  (max-width: 900px) and (min-width: 768px) {
     width: 90%;
   }
 `;
@@ -81,7 +81,7 @@ export const JobTitle = styled.h1`
   @media (max-width: 768px) {
     font-size: 3em;
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 1300px)  and (min-width: 768px){
     font-size: 3em;
   }
 `;
@@ -108,7 +108,7 @@ export const Hand = styled.span`
   @media (max-width: 768px) {
     font-size: 0.8em;
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 1300px) and (min-width: 768px) {
     font-size: 0.9em;
   }
 `;
@@ -121,7 +121,7 @@ export const SecondTitle = styled.h1`
   @media (max-width: 1024px) {
     font-size: 1.5em;
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 1300px) and (min-width: 1024px){
     font-size: 1.7em;
   }
 `;
@@ -134,7 +134,7 @@ export const Languages = styled.h1`
     font-size: 1.4em;
     color: var(--light-blue);
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 1300px)and (min-width: 768px) {
     font-size: 1.4em;
   }
 `;
@@ -167,13 +167,13 @@ export const MainImage = styled.img`
     border-radius: var(--border-radius-subtles);
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1024px)and (min-width: 768px) {
+    height: 200px;
+  }
+  @media (max-width: 1300px)  and (min-width: 1024px) {
     height: 300px;
   }
 
-  @media (max-width: 1024px) {
-    height: 200px;
-  }
 `;
 
 export const RigthDecoration = styled.img`

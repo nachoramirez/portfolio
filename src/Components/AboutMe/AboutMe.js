@@ -24,11 +24,11 @@ export const AboutMeData = styled.div`
     width: 95%;
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1300px) and (min-width: 768px) {
     width: 100%;
     height: auto;
   }
-  @media (max-width: 1490px) {
+  @media (max-width: 1490px) and (min-width: 1300px) {
     width: 95%;
   }
 `;
@@ -60,7 +60,7 @@ export const DescriptionContainer = styled.div`
     width: 100%;
     height: auto;
   }
-  @media (max-width: 1150px) {
+  @media (max-width: 1150px) and (min-width: 768px) {
     width: 75%;
     height: auto;
   }
@@ -68,7 +68,6 @@ export const DescriptionContainer = styled.div`
 
 export const ProgramerImage = styled.div`
   margin: auto 10px;
-
 
   @media (max-width: 1250px) {
     display: none;

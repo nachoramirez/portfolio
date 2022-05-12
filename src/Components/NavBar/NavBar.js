@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const NavBarContainer = styled.div`
   position: fixed;
@@ -23,27 +23,27 @@ export const NavBarContainer = styled.div`
     transition: 300ms ease-in-out;
     width: 80%;
     transform: ${(props) =>
-      props.isOpen ? 'translateX(0)' : 'translateX(-400px)'};
-    visibility: ${(props) => (props.isOpen ? 'visible' : 'hidden')};
+      props.isOpen ? "translateX(0)" : "translateX(-400px)"};
+    visibility: ${(props) => (props.isOpen ? "visible" : "hidden")};
     background: linear-gradient(
       180deg,
       rgba(7, 34, 39, 1) 40%,
       rgba(79, 189, 186, 1) 140%
     );
   }
-  @media (max-width: 1500px) {
-    width: 10%;
-  }
-  @media (max-width: 1200px) {
-    width: 13%;
-  }
-  @media (max-width: 1100px) {
-    width: 14%;
-  }
   @media (max-width: 900px) {
     width: 16%;
   }
-`
+  @media (max-width: 1100px) and (min-width: 900px) {
+    width: 14%;
+  }
+  @media (max-width: 1200px) and (min-width: 1200px) {
+    width: 13%;
+  }
+  @media (max-width: 1500px) and (min-width: 1500px) {
+    width: 10%;
+  }
+`;
 
 export const Name = styled.h1`
   justify-self: start;
@@ -55,13 +55,13 @@ export const Name = styled.h1`
     display: flex;
     text-align: center;
   }
-  @media (max-width: 1700px) {
-    font-size: 1.9em;
-  }
-  @media (max-width: 1100px) {
+  @media (max-width: 1100px) and (min-width: 768px) {
     font-size: 1.6em;
   }
-`
+  @media (max-width: 1700px) and (min-width: 1100px) {
+    font-size: 1.9em;
+  }
+`;
 
 export const NavBarButtons = styled.div`
   height: 45%;
@@ -69,7 +69,7 @@ export const NavBarButtons = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-`
+`;
 
 export const NavBarName = styled.p`
   color: var(--white);
@@ -79,7 +79,7 @@ export const NavBarName = styled.p`
   @media (max-width: 768px) {
     display: block;
   }
-`
+`;
 
 export const NavBarLink = styled.a`
   width: 60%;
@@ -91,7 +91,7 @@ export const NavBarLink = styled.a`
   @media (max-width: 768px) {
     justify-content: space-between;
   }
-`
+`;
 
 export const NavBarItem = styled.img`
   height: 35px;
@@ -107,7 +107,7 @@ export const NavBarItem = styled.img`
     &::before {
     }
   }
-`
+`;
 
 export const NavBarVisibilityButton = styled.img`
   display: none;
@@ -119,7 +119,7 @@ export const NavBarVisibilityButton = styled.img`
   @media (max-width: 768px) {
     display: block;
   }
-`
+`;
 
 /* 
 
