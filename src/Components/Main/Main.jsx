@@ -64,7 +64,7 @@ const Main = ({ goDown }) => {
           <RigthDecoration src={blueDots} />
         </ImagesContainer>
       </InfoAndFotoContainer>
-      <GoDownButton>See More</GoDownButton>
+      <GoDownButton onClick={() => goDown.moveSectionDown()}>See More</GoDownButton>
     </MainContainer>
   )
 }

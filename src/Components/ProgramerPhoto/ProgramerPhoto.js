@@ -1,5 +1,5 @@
-import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import React from "react";
+import styled, { keyframes } from "styled-components";
 
 const CrazyEyes = keyframes`
   0%{
@@ -9,8 +9,9 @@ const CrazyEyes = keyframes`
   } 100% {
     transform: translate(0)
   }
-`
-export const getCoffee = keyframes`
+`;
+
+const getCoffee = keyframes`
   0% { 
     transform: rotate(-3deg);
   } 50% {
@@ -18,18 +19,17 @@ export const getCoffee = keyframes`
   } 100% {
     transform: rotate(-3deg);
   }
-`
+`;
 
-export const LeftArm = styled.svg`
+const LeftArm = styled.svg`
   & path {
     transform-origin: 10% 60%;
     animation-delay: 12s;
     animation: ${getCoffee} 10s infinite;
   }
-`
+`;
 
-
-export const showlderMovement = keyframes`
+const showlderMovement = keyframes`
   0% {
     transform: rotate(0deg);
   } 50% {
@@ -37,26 +37,29 @@ export const showlderMovement = keyframes`
   } 100% {
     transform: rotate(0deg);
   }
-`
+`;
 
-
-export const LeftShowlder = styled.svg`
+const LeftShowlder = styled.svg`
   & path {
-    transform-origin: 16% 54% ;
+    transform-origin: 16% 54%;
     animation: ${showlderMovement} 10s infinite;
   }
-`
+`;
 
-export const Pupil = styled.ellipse`
+const Pupil = styled.ellipse`
   animation: ${CrazyEyes} 3s infinite;
-`
+`;
+
+const Svg = styled.svg`
+  height: 100%;
+  width: 100%;
+`;
 
 const ProgramerPhoto = () => {
   return (
-    <svg
+    <Svg
       xmlns="http://www.w3.org/2000/svg"
-      width="443"
-      height="386"
+
       fill="none"
       viewBox="0 0 443 386"
     >
@@ -150,8 +153,8 @@ const ProgramerPhoto = () => {
           d="M161.718 293.785c7.548 0 13.667-6.119 13.667-13.668 0-7.548-6.119-13.667-13.667-13.667s-13.667 6.119-13.667 13.667c0 7.549 6.119 13.668 13.667 13.668z"
         ></path>
       </g>
-    </svg>
-  )
-}
+    </Svg>
+  );
+};
 
-export default ProgramerPhoto
+export default ProgramerPhoto;
