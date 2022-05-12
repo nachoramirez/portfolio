@@ -31,7 +31,7 @@ export const NavBarContainer = styled.div`
       rgba(79, 189, 186, 1) 140%
     );
   }
-  @media (max-width: 900px) {
+  @media (max-width: 900px) and (min-width: 768px)  {
     width: 16%;
   }
   @media (max-width: 1100px) and (min-width: 900px) {
