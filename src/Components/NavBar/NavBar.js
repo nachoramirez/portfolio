@@ -31,6 +31,18 @@ export const NavBarContainer = styled.div`
       rgba(79, 189, 186, 1) 140%
     );
   }
+  @media (max-width: 1500px) {
+    width: 10%;
+  }
+  @media (max-width: 1200px) {
+    width: 13%;
+  }
+  @media (max-width: 1100px) {
+    width: 14%;
+  }
+  @media (max-width: 900px) {
+    width: 16%;
+  }
 `
 
 export const Name = styled.h1`
@@ -42,6 +54,12 @@ export const Name = styled.h1`
   @media (max-width: 768px) {
     display: flex;
     text-align: center;
+  }
+  @media (max-width: 1700px) {
+    font-size: 1.9em;
+  }
+  @media (max-width: 1100px) {
+    font-size: 1.6em;
   }
 `
 
