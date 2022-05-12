@@ -16,7 +16,7 @@ export const NavBarContainer = styled.div`
   justify-content: space-between;
   flex-direction: column;
   padding: 20px;
-  z-index: 10;
+  z-index: 11;
 
   @media (max-width: 768px) {
     position: absolute;

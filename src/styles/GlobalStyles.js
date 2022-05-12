@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   *,
@@ -20,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh;
     display: flex;
     float: right;
-    
+    align-self: flex-end;
 
     @media (max-width: 768px) {
       width: 100%;
@@ -54,7 +55,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: var(--font);
     background: linear-gradient(
       180deg,
-      rgba(7, 34, 39, 0.9)20%,
+      rgba(7, 34, 39, 0.9) 20%,
       rgba(79, 189, 186, 0.8) 120%
     ),
     url(${backgroundImage});

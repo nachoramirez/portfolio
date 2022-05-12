@@ -1,9 +1,9 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 export const AboutMeContainer = styled.section`
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   transition: 1s;
   opacity: ${(props) => (props.isVisible ? '1' : '0')};
   transform: ${(props) =>
@@ -11,12 +11,13 @@ export const AboutMeContainer = styled.section`
   @media (max-width: 768px) {
     opacity: 1;
     transform: translateX(0);
+    height: auto;
   }
 `
 
 export const AboutMeData = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 70%;
   @media (max-width: 768px) {
     opacity: 1;
@@ -50,7 +51,7 @@ export const DescriptionContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 60vh;
+    height: auto;
   }
 `
 

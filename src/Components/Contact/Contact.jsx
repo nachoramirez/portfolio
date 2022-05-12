@@ -36,7 +36,7 @@ const Contact = () => {
   }
 
   return (
-    <ContactContainter isVisible={isVisible}>
+    <ContactContainter id='#about-me' isVisible={isVisible}>
       <Title ref={Ref}>Contact me</Title>
       <h1> get in touch</h1>
       <Form onSubmit={handleSubmit}>

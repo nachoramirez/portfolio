@@ -28,7 +28,10 @@ const Main = ({ goDown }) => {
   return (
     <MainContainer>
       <MediaContainer>
-        <a href="https://www.linkedin.com/in/juan-ignacio-ramirez-8632831b3/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/juan-ignacio-ramirez-8632831b3/"
+          target="_blank"
+        >
           <MediaItem height="40px" src={linkdinLogo} />
         </a>
         <h1>•</h1>
@@ -61,9 +64,7 @@ const Main = ({ goDown }) => {
           <RigthDecoration src={blueDots} />
         </ImagesContainer>
       </InfoAndFotoContainer>
-      <GoDownButton onClick={() => goDown.moveSectionDown()}>
-        See More
-      </GoDownButton>
+      <GoDownButton>See More</GoDownButton>
     </MainContainer>
   )
 }
