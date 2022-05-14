@@ -170,8 +170,8 @@ export const MainImage = styled.img`
   @media (max-width: 1024px)and (min-width: 768px) {
     height: 200px;
   }
-  @media (max-width: 1300px)  and (min-width: 1024px) {
-    height: 300px;
+  @media (max-width: 1350px)  and (min-width: 1024px) {
+    height: 250px;
   }
 
 `;

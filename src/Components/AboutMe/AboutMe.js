@@ -68,7 +68,7 @@ export const DescriptionContainer = styled.div`
 
 export const ProgramerImage = styled.div`
   margin: auto 10px;
-
+  height: 300px;
   @media (max-width: 1250px) {
     display: none;
   }

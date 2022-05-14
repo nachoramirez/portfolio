@@ -87,7 +87,7 @@ export const ProyectDescription = styled.p`
   font-size: 2em;
   text-align: justify;
   @media (max-width: 768px) {
-    width: 100vw;
+    width: 90vw;
     padding: 0 10px;
     text-align: justify;
     font-size: 1.5em;
