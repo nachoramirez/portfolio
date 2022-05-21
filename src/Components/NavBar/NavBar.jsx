@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom"
 import {
   NavBarContainer,
   Name,
+  Logo,
   NavBarButtons,
   NavBarItem,
   NavBarVisibilityButton,
@@ -17,29 +18,36 @@ import ContactIcon from "../../static/ContactIcon.svg"
 import Menu from "../../static/Menu.svg"
 import CloseMenu from "../../static/CloseMenu.svg"
 
+import NachoLogo from "../../static/NRLogo.svg"
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const ref = useRef()
+  const ref = useRef(null)
   const Location = useLocation()
   const Navigate = useNavigate()
 
   useEffect(() => {
-    function handleClickOutside(event) {
-      if (ref.current && !ref.current.contains(event.target)) {
+    const handleOutsideClick = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) {
         setIsOpen(false)
       }
     }
 
-    document.addEventListener("mousedown", handleClickOutside)
+    window.addEventListener("click", handleOutsideClick)
+
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
+      window.removeEventListener("click", handleOutsideClick)
     }
   }, [ref])
+
+  useEffect(() => {
+    setIsOpen(false)
+  }, [Location])
 
   return (
     <>
       <NavBarContainer ref={ref} isOpen={isOpen}>
-        <Name> Juan Ignacio Ramirez</Name>
+        <Logo src={NachoLogo} />
         <NavBarButtons>
           <NavBarLink
             href='/#home'
@@ -72,11 +80,12 @@ const NavBar = () => {
           </NavBarLink>
         </NavBarButtons>
         <h1></h1>
+        <NavBarVisibilityButton
+          onClick={() => setIsOpen(!isOpen)}
+          src={isOpen ? CloseMenu : Menu}
+          isOpen={isOpen}
+        />
       </NavBarContainer>
-      <NavBarVisibilityButton
-        onClick={() => setIsOpen(!isOpen)}
-        src={isOpen ? CloseMenu : Menu}
-      />
     </>
   )
 }

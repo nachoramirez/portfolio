@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const ProyectsPageContainer = styled.section`
   flex-direction: column;
@@ -13,7 +13,7 @@ export const ProyectsPageContainer = styled.section`
     transform: translateX(0);
     height: auto;
   }
-`;
+`
 
 export const Title = styled.h1`
   font-size: 3.5em;
@@ -26,7 +26,12 @@ export const Title = styled.h1`
     border-radius: var(--border-radius-pill);
     margin: 20px auto;
   }
-`;
+
+  @media (max-height: 700px) {
+    margin: 0;
+  }
+
+`
 
 export const ProyectsContainer = styled.div`
   height: 70%;
@@ -36,21 +41,31 @@ export const ProyectsContainer = styled.div`
   margin-top: 100px;
   justify-content: space-around;
 
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     height: 60%;
     margin-top: 0;
     flex-direction: column;
     align-items: center;
   }
 
-  @media (max-width: 1500px) and (min-width: 768px) {
+  @media (max-width: 1700px) and (min-width: 780px) {
     flex-wrap: wrap;
+    margin-top: 0;
+    padding-right: 0;
   }
-`;
+  @media (max-height: 700px) {
+    padding: 0;
+    margin-top: 0;
+    height: 99%;
+  }
+
+`
 
 export const Proyect = styled.div`
   position: relative;
+  aspect-ratio: 16/9;
   width: 500px;
+  margin: 10px;
   height: 300px;
   background: url(${(props) => props.image || " "}) center;
   background-size: cover;
@@ -76,14 +91,21 @@ export const Proyect = styled.div`
     }
   }
 
-  @media (max-width: 900px) {
-    width: 250px;
-    height: 150px;
-    margin: 10px;
+  @media (max-width: 768px) {
+    width: 230px;
+    height: 130px;
   }
 
-  @media (max-width: 1700px) and (min-width: 900px){
+
+
+  @media (max-width: 1100px) and (min-width: 768px) {
+    width: 300px;
+    height: 190px;
+  }
+
+  @media (max-width: 1700px) and (min-width: 1100px) {
     width: 370px;
     height: 230px;
+    margin: 10px;
   }
-`;
+`

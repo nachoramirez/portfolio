@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const NavBarContainer = styled.div`
   position: fixed;
@@ -15,7 +15,7 @@ export const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   z-index: 11;
 
   @media (max-width: 768px) {
@@ -31,19 +31,19 @@ export const NavBarContainer = styled.div`
       rgba(79, 189, 186, 1) 140%
     );
   }
-  @media (max-width: 900px) and (min-width: 768px)  {
-    width: 16%;
+  @media (max-width: 900px) and (min-width: 768px) {
+    width: 15%;
   }
   @media (max-width: 1100px) and (min-width: 900px) {
     width: 14%;
   }
-  @media (max-width: 1200px) and (min-width: 1200px) {
-    width: 13%;
+  @media (max-width: 1300px) and (min-width: 1100px) {
+    width: 12%;
   }
-  @media (max-width: 1500px) and (min-width: 1500px) {
+  @media (max-width: 1500px) and (min-width: 1300px) {
     width: 10%;
   }
-`;
+`
 
 export const Name = styled.h1`
   justify-self: start;
@@ -59,9 +59,14 @@ export const Name = styled.h1`
     font-size: 1.6em;
   }
   @media (max-width: 1700px) and (min-width: 1100px) {
-    font-size: 1.9em;
+    font-size: 1.8em;
   }
-`;
+`
+
+export const Logo = styled.img`
+  height: 50px;
+  margin-top: 50px;
+`
 
 export const NavBarButtons = styled.div`
   height: 45%;
@@ -69,7 +74,7 @@ export const NavBarButtons = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-`;
+`
 
 export const NavBarName = styled.p`
   color: var(--white);
@@ -79,7 +84,7 @@ export const NavBarName = styled.p`
   @media (max-width: 768px) {
     display: block;
   }
-`;
+`
 
 export const NavBarLink = styled.a`
   width: 60%;
@@ -91,7 +96,7 @@ export const NavBarLink = styled.a`
   @media (max-width: 768px) {
     justify-content: space-between;
   }
-`;
+`
 
 export const NavBarItem = styled.img`
   height: 35px;
@@ -107,7 +112,7 @@ export const NavBarItem = styled.img`
     &::before {
     }
   }
-`;
+`
 
 export const NavBarVisibilityButton = styled.img`
   display: none;
@@ -116,10 +121,14 @@ export const NavBarVisibilityButton = styled.img`
   top: 10px;
   left: 10px;
   z-index: 11;
+  transition: 300ms ease-in-out;
   @media (max-width: 768px) {
     display: block;
+    visibility: visible;
+    transform:${(props) =>
+      props.isOpen ? "translateX(0)" : "translateX(400px)"};
   }
-`;
+`
 
 /* 
 

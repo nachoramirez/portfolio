@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const AboutMeContainer = styled.section`
   flex-direction: column;
@@ -13,7 +13,7 @@ export const AboutMeContainer = styled.section`
     transform: translateX(0);
     height: auto;
   }
-`;
+`
 
 export const AboutMeData = styled.div`
   display: flex;
@@ -25,13 +25,13 @@ export const AboutMeData = styled.div`
   }
 
   @media (max-width: 1300px) and (min-width: 768px) {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
   @media (max-width: 1490px) and (min-width: 1300px) {
     width: 95%;
   }
-`;
+`
 
 export const Title = styled.h1`
   font-size: 3.5em;
@@ -44,11 +44,11 @@ export const Title = styled.h1`
     border-radius: var(--border-radius-pill);
     margin: 20px auto;
   }
-`;
+`
 
 export const DescriptionContainer = styled.div`
   width: 60%;
-  height: 50vh;
+  height: auto;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: var(--border-radius-subtle);
@@ -60,19 +60,19 @@ export const DescriptionContainer = styled.div`
     width: 100%;
     height: auto;
   }
-  @media (max-width: 1150px) and (min-width: 768px) {
+  @media (max-width: 1400px) and (min-width: 768px) {
     width: 75%;
     height: auto;
   }
-`;
+`
 
 export const ProgramerImage = styled.div`
   margin: auto 10px;
   height: 300px;
-  @media (max-width: 1250px) {
+  @media (max-width: 1200px) {
     display: none;
   }
-`;
+`
 
 export const Description = styled.p`
   font-size: 1.5em;
@@ -80,11 +80,11 @@ export const Description = styled.p`
   @media (max-width: 768px) {
     font-size: 1.25em;
   }
-`;
+`
 
 export const ContactMe = styled.a`
   cursor: pointer;
   text-decoration: none;
   color: var(--yellow);
   font-weight: 400;
-`;
+`

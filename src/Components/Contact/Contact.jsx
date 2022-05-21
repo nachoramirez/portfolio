@@ -22,11 +22,11 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    // emailjs
-    //   .send('service_i8brmzu', 'template_ic14ipk', form, 'hiy_eRcAXlNbAp_Ai')
-    //   .then(setSuccessAlert(true))
-    //   .then(setTimeout(() => setSuccessAlert(false), 2000))
-    //   .catch((err) => console.error(err))
+    emailjs
+      .send('service_i8brmzu', 'template_ic14ipk', form, 'hiy_eRcAXlNbAp_Ai')
+      .then(setSuccessAlert(true))
+      .then(setTimeout(() => setSuccessAlert(false), 2000))
+      .catch((err) => console.error(err))
 
     event.target.reset()
   }
